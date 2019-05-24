@@ -28,7 +28,6 @@ public class MapJoinByDistributedCache {
         //conf.set
         Job job = Job.getInstance(conf,"ReduceJoinByDistributedCache");
 
-
         //DistributedCache.addCacheFile(new Path(args[2]).toUri(),conf);//small table -station.txt
         job.addCacheFile(new Path(args[2]).toUri());//small table -station.txt
         job.setJarByClass(MapJoinByDistributedCache.class);

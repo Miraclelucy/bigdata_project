@@ -14,7 +14,6 @@ import java.util.Arrays;
 
 /**
  * Created by lushiqin on 5/14/19.
- *
  * 看过“Lord of the Rings, The (1978)”用户和年龄性别分布
  */
 public class JavaMovieUserAnalyzer {

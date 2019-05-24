@@ -1,4 +1,4 @@
-package org.training.spark.streaming;
+package org.training.spark.streaming.wordcount;
 
 import org.apache.hadoop.hbase.ipc.ServerNotRunningYetException;
 import org.apache.spark.SparkConf;
@@ -12,6 +12,8 @@ import java.util.Arrays;
 
 /**
  * Created by lushiqin on 5/11/19.
+ * 从端口中接收流式数据，统计词频,统计过去1分钟内的单词计数,
+ *
  */
 public class JavaStreamingWordCount {
 
@@ -24,7 +26,7 @@ public class JavaStreamingWordCount {
 
         //1 create JavaStreamingContext whit 1 second batch size
         SparkConf sparkconf=new SparkConf().setAppName("JavaStreamingWordCount");
-        //sparkconf.setMaster("local[2]");
+        sparkconf.setMaster("local[2]");
         //JavaStreamingContext ssc=new JavaStreamingContext(sparkconf, Durations.seconds(10));
         JavaStreamingContext ssc=new JavaStreamingContext(sparkconf, Durations.minutes(1));
         ssc.sparkContext().setLogLevel("WARN");
