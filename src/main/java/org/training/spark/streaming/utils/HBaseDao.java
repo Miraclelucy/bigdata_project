@@ -9,7 +9,7 @@ import org.apache.hadoop.hbase.util.Bytes;
 import java.io.IOException;
 
 /**
- * Created by bigdata on 5/23/19.
+ * Created by lushiqin on 5/23/19.
  */
 public class HBaseDao {
     private static final String zkAddress = "master-129:2181";

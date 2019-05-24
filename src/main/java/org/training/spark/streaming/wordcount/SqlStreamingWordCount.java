@@ -17,7 +17,7 @@ import org.training.spark.streaming.utils.Record;
 import java.util.Arrays;
 
 /**
- * Created by bigdata on 5/23/19.
+ * Created by lushiqin on 5/23/19.
  * 利用spark-sql处理流式数据
  */
 public class SqlStreamingWordCount {

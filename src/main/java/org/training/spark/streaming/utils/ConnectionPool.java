@@ -25,7 +25,7 @@ public class ConnectionPool
                 connectionQueue = new LinkedList<Connection>();
                 for (int i = 0;i < 5;i ++) {
                     Connection conn = DriverManager.getConnection(
-                            "jdbc:mysql://hadoop:3306/test?characterEncoding=utf8&useSSL=true",
+                            "jdbc:mysql://master-129:3306/test?characterEncoding=utf8&useSSL=true",
                             "root",
                             "Cmge1234"
                     );

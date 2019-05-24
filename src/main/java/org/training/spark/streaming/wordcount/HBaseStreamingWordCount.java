@@ -16,7 +16,7 @@ import java.util.Arrays;
 import java.util.function.Consumer;
 
 /**
- * Created by bigdata on 5/23/19.
+ * Created by lushiqin on 5/23/19.
  * 将流式数据保存到HBase中
  */
 public class HBaseStreamingWordCount {

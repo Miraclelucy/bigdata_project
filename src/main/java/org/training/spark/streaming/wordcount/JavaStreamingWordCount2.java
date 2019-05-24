@@ -13,7 +13,7 @@ import scala.Tuple2;
 import java.util.Arrays;
 
 /**
- * Created by bigdata on 5/23/19.
+ * Created by lushiqin on 5/23/19.
  * 从端口中接收流式数据，统计词频,统计过去5分钟内的单词计数,窗口大小是5分钟，滑动窗口是1分钟
  */
 public class JavaStreamingWordCount2 {
