@@ -59,7 +59,7 @@ public class JavaUserClickCountAnalytics {
                 record.forEachRemaining(x->{
                     try {
                         Statement st = conn.createStatement();
-                        String sql="insert into streaming(word,count) values('" + x._1 + "'," + x._2 + ")";
+                        String sql="insert into streaming_word_count(uid,count) values('" + x._1 + "'," + x._2 + ")";
                         st.execute(sql);
                     }catch (Exception e)
                     {
