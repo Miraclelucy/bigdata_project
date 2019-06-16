@@ -40,6 +40,8 @@ public class PracticeTwo {
                 .orderBy(col("sum").desc())
                 .take(3);
 
+        
+
 
         //3 请输出希拉里最喜欢使用的十个单词
         //Dataset<Row> content =  emails.agg("ExtractedCc");

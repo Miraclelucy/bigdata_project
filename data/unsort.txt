@@ -1,0 +1,12 @@
+aa 11
+bb 11
+cc 34
+aa 22
+bb 67
+cc 29
+aa 36
+bb 33
+cc 30
+aa 42
+bb 44
+cc 49
